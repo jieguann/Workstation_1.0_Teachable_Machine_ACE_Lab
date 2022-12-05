@@ -1,0 +1,46 @@
+{
+  "name": "js-son-agent",
+  "version": "0.0.15",
+  "description": "JS-son - a Minimal JavaScript BDI Agent Library",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/jasmine/bin/jasmine.js",
+    "doc": "./node_modules/jsdoc/jsdoc.js src/*",
+    "lint": "./node_modules/.bin/eslint -c .eslintrc.yml \"./**/*.js\"",
+    "build": "npx webpack",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimKam/js-son.git"
+  },
+  "keywords": [
+    "Agents",
+    "BDI",
+    "JavaScript"
+  ],
+  "author": "Timotheus Kampik",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/TimKam/js-son/issues"
+  },
+  "homepage": "https://github.com/TimKam/js-son#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jasmine": "^2.10.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jasmine": "^3.3.1",
+    "jsdoc": "^3.6.3",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
